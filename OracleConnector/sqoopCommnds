@@ -1,0 +1,2 @@
+sqoop import –connect jdbc:oracle:thin:system system@192.168.46.1:1521:xe \
+--username system -P -table system.emp -columns "ID" --target-dir /sqoopoutput1 -m 1
