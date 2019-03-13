@@ -25,4 +25,4 @@ GRANT CREATE SYNONYM TO canada;
 GRANT CREATE DATABASE LINK TO canada;
 GRANT UNLIMITED TABLESPACE TO canada;
 grant connect,resource to canada;
-GRANT SYSDBA TO canada;
+GRANT system TO canada;
