@@ -1,3 +1,6 @@
+
+
+
 sqoop import --connect jdbc:oracle:thin:system/Clodera123@10.142.142.168:1521:xe \
 --username usa --password usa --table emp --columns "ID" --target-dir /user/cloudera/sqoopOracle -m1
 
