@@ -1,0 +1,6 @@
+sqoop import --connect jdbc:oracle:thin:sys/system@192.168.197.1:1521:xe \
+--username usa  --password usa \
+--table Transactions \
+--columns "Transaction_id,Tdate,Amount,Product,State,City,postalcode" \
+-m 1 \
+--target-dir /user/cloudera/sqoopOracle

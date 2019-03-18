@@ -1,0 +1,15 @@
+conn sys as sysdba
+conn usa/usa
+
+Create table Transactions(
+Transaction_id int,
+Tdate date,
+Amount int,
+Product varchar2(50),
+State varchar2(50),
+City varchar2(50),
+postalcode int);
+
+insert into Transactions values(1,'12-sep-16',2000,'XYZ','NY','NY',1056);
+
+commit;
