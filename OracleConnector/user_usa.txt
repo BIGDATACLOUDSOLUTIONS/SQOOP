@@ -1,6 +1,7 @@
 Go to cmd and Give the below command
 
 CONNECT SYS AS SYSDBA;
+password: root
 
 SQL Session will be started. Give below commands
 
