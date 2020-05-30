@@ -42,9 +42,9 @@ location '/user/maria_dev/hive/data/customer';
 
 --Steps:
 1. Create the required Tables in Hive
-2. Fetch the maximum value of dataloaddate from hive 'customer' table.
-3. Import the data from mysql using sqoop on HDFS. Import the data based on dataloaddate. dataloaddate should be greater than the
-value extracted in step2.
+2. Fetch the maximum value of data_load_date from hive 'customer' table.
+3. Sqoop the data from mysql using sqoop on HDFS. While importing data, add one static column with system date and use the same 
+for the data_dwnld_date. Import the data based on data_load_date. data_load_date should be greater than the value extracted in step2.
 4. Create the staging table on top of the data imported in step 3.
-5. Insert the data in partitioned table
+5. Insert the data in partitioned table based on data_dwnld_date from raw table.
 
