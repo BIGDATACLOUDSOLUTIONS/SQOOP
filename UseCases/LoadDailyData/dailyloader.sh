@@ -25,4 +25,6 @@ sqoop import \
 --hive-delims-replacement ' ' \
 --fields-terminated-by '\001'
 
-beeline -u ${hive_beeline_url} -e "set hive.exec.dynamic.partition=true;set hive.exec.dynamic.partition.mode=nonstrict;insert overwrite table rajeshkr.customer partition(data_dwnld_date) select * from rajeshkr.customer_raw;"
+beeline -u ${hive_beeline_url} -e "set hive.exec.dynamic.partition=true;
+set hive.exec.dynamic.partition.mode=nonstrict;
+insert overwrite table rajeshkr.customer partition(data_dwnld_date) select * from rajeshkr.customer_raw;"
